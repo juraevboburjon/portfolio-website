@@ -8,9 +8,9 @@ function HomePage() {
         <div className="">
           <h1 className="font-bold text-5xl">
             <span>주라에브</span>
-            <span className="block mt-3">무함마드버부르</span>
+            <span className="block mt-2">무함마드버부르</span>
           </h1>
-          <p className="w-[490px] mt-3.5 text-gray-600">
+          <p className="w-[490px] mt-8 text-gray-600">
             React를 사용하여 반응형 및 인터랙티브 웹 애플리케이션을 직접 구축한
             경험이 있는 동기 부여형 프론트엔드 개발자.
           </p>
