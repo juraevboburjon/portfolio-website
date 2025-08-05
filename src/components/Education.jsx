@@ -1,3 +1,5 @@
+import Info from "./Info";
+
 function Education() {
   return (
     <div className="w-screen flex flex-col justify-center items-center py-30">
@@ -52,6 +54,8 @@ function Education() {
           <p>Web development JS & React</p>
         </div>
       </div>
+
+      <Info />
     </div>
   );
 }
