@@ -62,9 +62,13 @@ body {
   background: linear-gradient(to left, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0));
 }
 
+.animate {
+  animation: corusel 30s linear infinite;
+  width: 200%;
+}
+
 .logo-corusel {
   display: inline-block;
+  margin-left: 80px;
   white-space: nowrap;
-  width: 200%;
-  animation: corusel 30s linear infinite;
 }

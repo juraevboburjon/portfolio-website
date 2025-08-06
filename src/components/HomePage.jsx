@@ -1,7 +1,17 @@
+"use client";
+
 import HomeIcons from "@/components/HomeIcons";
 import Image from "next/image";
 
 function HomePage() {
+  function downloadResume() {
+    const link = document.createElement("a");
+    link.href = "/Juraev_Mukhammadbobur.pdf";
+    link.download = "Juraev_Mukhammadbobur.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   const downloadIcon = (
     <svg
       aria-hidden="true"
@@ -35,7 +45,10 @@ function HomePage() {
             React를 사용하여 반응형 및 인터랙티브 웹 애플리케이션을 직접 구축한
             경험이 있는 동기 부여형 프론트엔드 개발자.
           </p>
-          <button className="flex justify-center items-center gap-2 bg-white px-8 py-2  text-black font-bold mt-8 min-w-40 rounded-lg hover:bg-white/90 transition-colors cursor-pointer">
+          <button
+            onClick={() => downloadResume()}
+            className="flex justify-center items-center gap-2 bg-white px-8 py-2  text-black font-bold mt-8 min-w-40 rounded-lg hover:bg-white/90 transition-colors cursor-pointer"
+          >
             이력서 다운로드
             <span>{downloadIcon}</span>
           </button>
