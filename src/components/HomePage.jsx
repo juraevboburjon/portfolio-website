@@ -43,7 +43,7 @@ function HomePage() {
         <div className="">
           <Image
             className="rounded-full"
-            src="/home_img.jpg"
+            src="/home_img4.jpg"
             width={350}
             height={350}
             alt="Picture of the author"

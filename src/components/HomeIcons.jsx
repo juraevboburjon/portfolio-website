@@ -1,13 +1,14 @@
+import "../app/globals.css";
 import { iconsHome } from "./icons.js";
 
 function HomeIcons() {
   return (
-    <div className="flex items-center justify-between  w-[920px] ">
-      {iconsHome.map((icon, i) => (
-        <div className="w-8" key={i}>
-          {icon}
-        </div>
-      ))}
+    <div className="flex space-x-16 logos items-center justify-between w-[920px]">
+      <div className="logo-corusel">
+        {iconsHome.map((icon, i) => (
+          <img src={icon} alt="" key={i} />
+        ))}
+      </div>
     </div>
   );
 }

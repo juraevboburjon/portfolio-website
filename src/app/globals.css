@@ -26,3 +26,45 @@ body {
   color: var(--foreground);
   font-family: Montserrat, sans-serif;
 }
+
+@keyframes corusel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 3;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0));
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0));
+}
+
+.logo-corusel {
+  display: inline-block;
+  white-space: nowrap;
+  width: 200%;
+  animation: corusel 30s linear infinite;
+}
