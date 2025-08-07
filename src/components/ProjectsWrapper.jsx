@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { projects } from "./projects.js";
+import { projectsJson } from "./projects-json.js";
 import Link from "next/link.js";
 
 function ProjectsWrapper() {
   return (
     <div className="grid grid-cols-3 w-[950px] gap-8">
-      {projects.map((project, i) => (
+      {projectsJson.map((project, i) => (
         <div key={i} className="grid items-start justify-between mt-10">
           <div className="relative max-w-72">
             <span

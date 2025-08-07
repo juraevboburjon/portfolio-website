@@ -1,3 +1,4 @@
+"use client";
 import Education from "@/components/Education";
 import HomePage from "@/components/HomePage";
 import KeyFrame from "@/components/KeyFrame";

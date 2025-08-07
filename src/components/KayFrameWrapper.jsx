@@ -1,9 +1,14 @@
 import Image from "next/image";
+import { useFadeScroll } from "./useFadeScroll";
 
 function KayFrameWrapper() {
+  useFadeScroll();
   return (
     <div className=" flex flex-col w-[900px]">
-      <div className="flex gap-10 items-center justify-between mt-25">
+      <div
+        data-aos="fade-up"
+        className="flex gap-10 items-center justify-between mt-25"
+      >
         <div className="w-80">
           <h1 className="text-2xl font-extrabold mt-5">모든 프론트엔드 개발</h1>
           <p className="text-gray-600 text-sm tracking-[0.5px] font-light mt-5">
@@ -24,7 +29,10 @@ function KayFrameWrapper() {
         </div>
       </div>
 
-      <div className="flex gap-10 items-center justify-between mt-25">
+      <div
+        data-aos="fade-up"
+        className="flex gap-10 items-center justify-between mt-25"
+      >
         <div className="f">
           <Image
             src="/keyframe-img2.png"
@@ -45,7 +53,10 @@ function KayFrameWrapper() {
         </div>
       </div>
 
-      <div className="flex gap-10 items-center justify-between mt-25">
+      <div
+        data-aos="fade-up"
+        className="flex gap-10 items-center justify-between mt-25"
+      >
         <div className="w-80">
           <h1 className="text-2xl font-extrabold mt-5">
             새러운 기술 배우고 공부

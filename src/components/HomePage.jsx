@@ -1,9 +1,11 @@
 "use client";
-
 import HomeIcons from "@/components/HomeIcons";
 import Image from "next/image";
+import { useFadeScroll } from "./useFadeScroll";
 
 function HomePage() {
+  useFadeScroll();
+
   function downloadResume() {
     const link = document.createElement("a");
     link.href = "/Juraev_Mukhammadbobur.pdf";
@@ -12,6 +14,7 @@ function HomePage() {
     link.click();
     document.body.removeChild(link);
   }
+
   const downloadIcon = (
     <svg
       aria-hidden="true"
@@ -35,7 +38,10 @@ function HomePage() {
   );
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
-      <div className="flex items-center justify-between w-[920px] mx-auto">
+      <div
+        data-aos="fade-up"
+        className="flex items-center justify-between w-[920px] mx-auto"
+      >
         <div className="">
           <h1 className="font-bold text-5xl">
             <span>주라에브</span>
