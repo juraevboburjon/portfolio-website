@@ -1,5 +1,9 @@
 import "./globals.css";
 
+export const metadataBase = new URL(
+  "https://portfolio-website-t9bl.onrender.com/"
+);
+
 export const metadata = {
   title: "주라에브 무함마드버부르",
   description:
@@ -13,7 +17,7 @@ export const metadata = {
     // siteName: "Название сайта",
     images: [
       {
-        url: "/public/home_img4.jpg",
+        url: "/home_img4.jpg",
       },
     ],
   },
