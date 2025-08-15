@@ -20,7 +20,7 @@ function KayFrameWrapper() {
 
         <div className="f">
           <Image
-            src="/keyframe-img1.png"
+            src="/keyframe-img1.webp"
             alt="Here is image"
             className="rounded"
             width={480}
@@ -35,7 +35,7 @@ function KayFrameWrapper() {
       >
         <div className="f">
           <Image
-            src="/keyframe-img2.png"
+            src="/keyframe-img2.webp"
             alt="Here is image"
             className="rounded"
             width={480}
@@ -70,7 +70,7 @@ function KayFrameWrapper() {
 
         <div className="f">
           <Image
-            src="/keyframe-img3.png"
+            src="/keyframe-img3.webp"
             alt="Here is image"
             className="rounded"
             width={480}
